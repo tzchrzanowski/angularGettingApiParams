@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script data-require="angular.js@*" data-server="1.5.8" src="https://code.angularjs.org/1.5.8/angular.js"></script>
+	<script src="script.js"></script>
+
+	<title>angu first page</title>
+</head>
+<body ng-app="githubViewer" ng-controller="MainController" >
+<h1>{{message}}</h1>
+<div>Name: {{user.name}}</div>
+<div>Location: {{user.location}}</div>
+<img ng-src="{{user.avatar_url}}" title="{{user.name}}">
+<div>{{error}}</div>
+</body>
+</html>
